@@ -21,7 +21,6 @@ public class MathController {
             model.addAttribute("num2",mathReceiveForm.getNum2());
             model.addAttribute("totalNum", mathReceiveForm.totalNum(mathReceiveForm.getNum1(), mathReceiveForm.getNum2(), mathReceiveForm.getNumkind()));
             return "mathFinish";
-
         }
 
 }

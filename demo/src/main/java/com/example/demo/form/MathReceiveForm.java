@@ -34,10 +34,10 @@ public class MathReceiveForm {
             return a - b;
         }else if(numkind.equals("multi")){
             return a * b;
-        }else{
+        }else if(numkind.equals("div")){
             return a / b;
+        }else{
+            return 0;
         }
     }
-
-
 }

@@ -8,11 +8,16 @@
 </head>
 
 <body>
-    一つ目の数字は:<span th:text="${name}">dummy</span>
+    <form action="mathForm.html" th:action="@{/math1}" method="post">
+
+    一つ目の数字は:<span th:text="${num1}">dummy</span>
     <br>
-    二つ目の数字は:<span th:text="${age}">dummy</span>
+    二つ目の数字は:<span th:text="${num2}">dummy</span>
     <br>
-    計算結果は:<span th:text="${total}">dummy</span>
+    計算結果は:<span th:text="${totalNum}">dummy</span>
+
+    <input type="submit" value="もう一度計算する">	
+</form>
 
 </body>
 
